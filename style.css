@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+	--blue: #1f2937;
+	--light-blue: #3882f6;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* reusable */
+.flex {
+	display: flex;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	/* padding: 3em 0; */
+}
+
+/* general */
+body {
+	font-family: "Roboto", sans-serif;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content {
+	flex: 1;
+}
+
+header,
+.intro,
+footer {
+	background-color: var(--blue);
+	color: white;
+}
+
+button {
+	border: 0px solid white;
+	margin-top: 0.7em;
+	padding: 0.5em 1.5em;
+	color: white;
+	background-color: var(--light-blue);
+}
+
+/* header */
+header .container.flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 0 0em 0em;
+}
+
+.header-links {
+	gap: 1em;
+}
+
+/* intro */
+.intro {
+	padding: 6em 0;
+}
+
+.intro .container {
+	gap: 2em;
+}
+
+.intro-right {
+	flex: 1;
+	background-color: rgba(255, 255, 255, 0.322);
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-left {
+	max-width: 37%;
+}
+
+.intro-left h1 {
+	max-width: 85%;
+}
+
+/* info */
+.info {
+	padding: 6em 0;
+	padding-top: 3em;
+}
+
+.info .container {
+	flex-direction: column;
+	align-items: center;
+}
+
+.info .container h2 {
+	margin-bottom: 1.5em;
+}
+
+.all-info-image {
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4.5em;
+}
+
+.info-image {
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	max-width: 10em;
+	max-height: 20em;
+	gap: 0.5em;
+}
+
+.info-placeholder {
+	width: 12em;
+	height: 12em;
+	background-color: lightgrey;
+}
+
+/* quote */
+.quote {
+	background-color: #e5e7eb;
+	padding: 6em 0;
+}
+
+.quote .container {
+	flex-direction: column;
+}
+
+.quote p {
+	align-self: flex-end;
+}
+
+/* call to action */
+.call-to-action {
+	padding: 6em 0;
+}
+
+.call-to-action .container {
+	color: white;
+	justify-content: center;
+	background-color: var(--light-blue);
+	gap: 10em;
+	padding: 2.5em;
+}
+
+/* footer */
+footer .container {
+	justify-content: center;
+	padding: 2em;
+}
