@@ -52,11 +52,23 @@ button {
 	cursor: pointer;
 	display: inline-block;
 	border: none;
-	margin-top: 0.7em;
 	padding: 0.5em 1.5em;
 	color: white;
 	background-color: var(--light-blue);
 	border-radius: 6px;
+}
+
+p,
+a {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
 }
 
 /* header */
@@ -106,11 +118,12 @@ header p {
 .intro-left p {
 	font-size: 18px;
 	color: var(--secondary-text);
+	margin: 0.5em 0;
 }
 
 /* info */
 .info {
-	padding: 6em 0;
+	padding: 7em 0;
 	padding-top: 3em;
 }
 
@@ -127,21 +140,21 @@ header p {
 .all-info-image {
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 4.5em;
+	gap: 3em;
 }
 
 .info-image {
 	text-align: center;
 	flex-direction: column;
 	align-items: center;
-	max-width: 10em;
-	max-height: 20em;
+	max-width: 11em;
+	max-height: 21em;
 	gap: 0.5em;
 }
 
 .info-placeholder {
-	width: 12em;
-	height: 12em;
+	width: 10em;
+	height: 10em;
 	outline: var(--light-blue) solid 4px;
 	background-color: white;
 	border-radius: 10px;
@@ -154,15 +167,24 @@ header p {
 /* quote */
 .quote {
 	background-color: var(--grey);
-	padding: 6em 0;
+	padding: 7em 0;
 }
 
 .quote .container {
+	max-width: 55%;
 	flex-direction: column;
 }
 
 .quote p {
+	font-size: 36px;
+	font-style: italic;
 	align-self: flex-end;
+}
+
+p.quote-author {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 22px;
 }
 
 /* call to action */
@@ -172,15 +194,20 @@ header p {
 
 .call-to-action .container {
 	color: white;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: var(--light-blue);
 	gap: 10em;
-	padding: 2.5em;
+	padding: 3em 7em;
+	border-radius: 8px;
+}
+
+.call-to-action p {
+	font-size: 15px;
 }
 
 .call-to-action button {
 	border: white solid;
-	padding: 0 2.1em;
+	padding: 0 2.5em;
 }
 
 /* footer */
