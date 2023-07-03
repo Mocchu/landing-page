@@ -40,8 +40,15 @@ footer {
 	color: white;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 button {
-	border: 0px solid white;
+	cursor: pointer;
+	display: inline-block;
+	border: none;
 	margin-top: 0.7em;
 	padding: 0.5em 1.5em;
 	color: white;
@@ -144,6 +151,10 @@ header .container.flex {
 	background-color: var(--light-blue);
 	gap: 10em;
 	padding: 2.5em;
+}
+
+.call-to-action button {
+	border: white solid;
 }
 
 /* footer */
