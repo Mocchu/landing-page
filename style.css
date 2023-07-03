@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap");
 
 :root {
 	--blue: #1f2937;
 	--light-blue: #3882f6;
+	--grey: #e5e7eb;
+	--secondary-text: #e5e7eb;
 }
 
 * {
@@ -46,6 +48,7 @@ a {
 }
 
 button {
+	font-weight: bold;
 	cursor: pointer;
 	display: inline-block;
 	border: none;
@@ -53,16 +56,24 @@ button {
 	padding: 0.5em 1.5em;
 	color: white;
 	background-color: var(--light-blue);
+	border-radius: 6px;
 }
 
 /* header */
-header .container.flex {
+header .container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 1em 0 0em 0em;
 }
 
+header p {
+	font-size: 24px;
+	font-weight: bold;
+}
+
 .header-links {
+	color: var(--secondary-text);
 	gap: 1em;
 }
 
@@ -72,7 +83,7 @@ header .container.flex {
 }
 
 .intro .container {
-	gap: 2em;
+	gap: 3em;
 }
 
 .intro-right {
@@ -83,11 +94,18 @@ header .container.flex {
 }
 
 .intro-left {
-	max-width: 37%;
+	max-width: 42%;
 }
 
 .intro-left h1 {
+	font-size: 48px;
+	font-weight: bolder;
 	max-width: 85%;
+}
+
+.intro-left p {
+	font-size: 18px;
+	color: var(--secondary-text);
 }
 
 /* info */
@@ -102,6 +120,7 @@ header .container.flex {
 }
 
 .info .container h2 {
+	color: var(--blue);
 	margin-bottom: 1.5em;
 }
 
@@ -123,12 +142,18 @@ header .container.flex {
 .info-placeholder {
 	width: 12em;
 	height: 12em;
-	background-color: lightgrey;
+	outline: var(--light-blue) solid 4px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.info-image p {
+	color: var(--blue);
 }
 
 /* quote */
 .quote {
-	background-color: #e5e7eb;
+	background-color: var(--grey);
 	padding: 6em 0;
 }
 
@@ -155,6 +180,7 @@ header .container.flex {
 
 .call-to-action button {
 	border: white solid;
+	padding: 0 2.1em;
 }
 
 /* footer */
