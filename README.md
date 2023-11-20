@@ -2,7 +2,4 @@
 
 The Odin Project - HTML + CSS Project 2
 
-Things learned prior:
-
--   CSS
--   Flexbox
+Simple HTML and CSS landing page
